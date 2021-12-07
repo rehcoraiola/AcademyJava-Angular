@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILMES</title>
+</head>
+<body>
+    <h2>Lista de filme</h2>
+    <a href="/filme/form">Cadastrar novo</a><br/>
+  <!-- <h5 th:text="${nome}">Filme Padrão</h5>    Filme padrão(default) -->
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Diretor</th>
+            <th>Genero</th>
+            <th></th>
+        </thead>
+        <tbody>
+            <!-- for(Filme filme:lista) -->
+            <tr th:each="f:${filmes}">
+                <td th:text="${f.id}"></td>
+                <td th:text="${f.nome}"></td>
+                <td th:text="${f.nomeDiretor}"></td>
+                <td th:text="${f.genero}"></td>
+                <td>
+                    <a th:href="@{'/filme/editar/'+${f.id}}">Editar</a>
+                    <a th:href="@{'/filme/deletar/'+${f.id}}">Deletar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

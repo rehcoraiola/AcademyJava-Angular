@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes - Formulario </title>
+</head>
+<body>
+    <h1>Cadastro de filme</h1>
+    <form action="/filme/salvar" method="post">
+        <input type="hidden" name="id" id="id" th:value="${filme.id}"><br />
+        nome: <input type="text" name="nome" id="nome" th:value="${filme.nome}"><br />
+        nome do diretor: <input type="text" name="nomeDiretor" id="nome" th:value="${filme.nomeDiretor}"><br />
+        genero: <input type="text" name="nome" id="genero" th:value="${filme.genero}"><br />
+        <input type="submit" value="salvar">
+    </form>
+    <a href="/filme">Voltar</a>
+</body>
+</html>
