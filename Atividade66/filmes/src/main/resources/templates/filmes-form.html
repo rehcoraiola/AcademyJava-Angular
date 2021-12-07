@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head th:replace="~{base :: head(Filmes Cadastrar)}"></head>
+<body>
+    <header th:replace="^(base :: topo)"></header>
+    <main>
+    <h1>Cadastro de filme</h1>
+    <form action="/filme/salvar" method="post">
+        <input type="hidden" name="id" id="id" th:value="${filme.id}"><br />
+        <div class="mb-3">
+
+
+        </div>
+        <div class="mb-3">
+            <label for="nome" class="form-label">nome:</label>
+            <input type="text" name="nome" id="nome" th:value="${filme.nome}">
+        </div>
+        <div class="mb-3">
+            <label for="nomediretor" class="form-label">nome do diretor:</label>
+           <input class="form-control" type="text" name="nomeDiretor" id="nomediretor" th:value="${filme.nomeDiretor}">
+        </div>
+        <div class="mb-3">
+            <label for="genero" class="form-label">genero:</label>
+        <input class="form-control" type="text" name="genero" id="genero" th:value="${filme.genero}">
+        </div>
+        <input class="btn btn-success" type="submit" value="salvar">
+    </form>
+    <a class="btn btn-secondary" href="/filme">Voltar</a>
+</main>
+</body>
+</html>
