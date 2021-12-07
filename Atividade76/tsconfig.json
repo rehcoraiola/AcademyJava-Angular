@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "ES6",                //versão que deve converter(Suporta todos os browser)
+        "outDir": "dist/js",            //Para qual pasta deve ir
+        "noEmitOnError": true,
+        "noImplicitAny": true,          //Eu especifico o tipo
+    },
+    "target":["src/**/*"]                       //onde estão os arquivos a serem compilados 
+}
