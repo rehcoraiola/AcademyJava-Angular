@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(209, 197, 221);
+}
+.titulo{
+    text-transform: uppercase;
+}
+#head{
+    color:black;
+}
+main{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+form{
+    text-align: left;
+}
