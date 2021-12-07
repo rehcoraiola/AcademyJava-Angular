@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background-color: blueviolet;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 50px; /*TROCAR*/
+    background-color: antiquewhite;
+    
+}
+h1{
+    margin: 20px;
+    align-items: center;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
