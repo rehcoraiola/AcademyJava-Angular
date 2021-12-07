@@ -1,0 +1,20 @@
+<p>Listar Clientes!</p>
+
+<table *ngIf="lista.length>0;else listaVazia">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let f of lista">
+            <td>{{f.id}}</td>
+            <td>{{f.nome}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ng-template #listaVazia>
+  <p>Nenhum filme cadastrado</p>
+</ng-template>
