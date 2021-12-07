@@ -1,0 +1,11 @@
+body{
+    width: 60%;
+    text-align: center;
+}
+form{
+    border: 5px solid back;
+}
+#btn{
+    background-color: rgb(134, 104, 109);
+    border-radius: 20px;
+}

@@ -1,0 +1,13 @@
+table{
+    width: 60%;
+    margin: auto;
+    background-color: #ccc;
+}
+thead{
+    background-color: black;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+tbody{
+    font-size: large;
+}
